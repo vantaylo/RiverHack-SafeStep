@@ -22,7 +22,7 @@ _So That_ I can safely cross at traffic intersections
 
 **Smart Infrastructure:** Enhance the safety and accessibility of Austin's public spaces and transportation systems
 
-## Track
+## Tracks
 
 - Austin Community Engagement Track
 - Community Choice Awards 
@@ -36,10 +36,10 @@ _So That_ I can safely cross at traffic intersections
 - COA Traffic Control API (C-V2X)
 
 
-## MVP
+## Mean Viable Product (MVP)
 
 * Set Destination  
-* Alert when 20ft within a crosswalk  
+* Alert when within 20ft of a signalized intersection's crosswalk  
 * Alert crossing status  
   * Walk  
   * Warning  
