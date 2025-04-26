@@ -1,1 +1,54 @@
-# RiverHack-SafeStep
+# RiverHack 2025 - SafeStep
+
+## Business Context
+
+As a Major Metropolitan Area, Austin Texas is home to nearly a million residents making it the 10th largest U.S. city. We are acutely aware of the needs of visually impaired residents and visitors here for leisure or business. As a City, we prioritize their safety as a fundamental responsibility and keep our growing city accessible to all.
+
+To this end, we are developing SafeStep to assist all in navigating busy urban intersections. This App will use the latest in C-V2X technology to communicate with other vehicles. This networking standard is well understood by existing automotive systems and allows both oncoming vehicles and pedestrians to be aware of each other–reducing accidents. SafeStep makes signalized crossings safe, convenient, and easy.
+
+This app will leverage the best resources we are privileged with by our status as the Tech Capital of Texas and foster the development of further pedestrian aids to allow our local businesses to grow even further. 
+
+
+## User Story
+
+AS A visually impaired person  
+I WANT to be aware of vehicle traffic  
+SO THAT I can safely cross at traffic intersections
+
+
+## Challenge Area
+
+**Inclusive Accessibility**: ​Ensure safety information and services reach all residents, including those with disabilities
+
+**Smart Infrastructure:** Enhance the safety and accessibility of Austin's public spaces and transportation systems
+
+## Track
+
+- Austin Community Engagement Track
+- Community Choice Awards 
+
+
+
+## Technologies
+
+- React  
+- Geolocation API  
+- COA Traffic Control API (C-V2X)
+
+
+## MVP
+
+* Set Destination  
+* Alert when 20ft within a crosswalk  
+* Alert crossing status  
+  * Walk  
+  * Warning  
+  * Stop  
+    
+
+## Group
+
+* Alex  
+* Josh  
+* Luis  
+* Vanessa
