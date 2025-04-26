@@ -19,7 +19,7 @@ export default function Index() {
           textAlign: "center", // Center the text horizontally
           textTransform: "uppercase", // Uppercase text
           letterSpacing: 4, // Spacing between letters
-          marginTop: -255,
+          marginTop: -370,
         }}
       >
         SafeStep
