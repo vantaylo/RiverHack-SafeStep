@@ -36,7 +36,7 @@ _So That_ I can safely cross at traffic intersections
 - COA Traffic Control API (C-V2X)
 
 
-## Mean Viable Product (MVP)
+## Minimum Viable Product (MVP)
 
 * Set Destination  
 * Alert when within 20ft of a signalized intersection's crosswalk  
