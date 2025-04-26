@@ -1,4 +1,4 @@
-# RiverHack 2025 - SafeStep
+# RiverHacks 2025 - SafeStep
 
 ## Business Context
 
