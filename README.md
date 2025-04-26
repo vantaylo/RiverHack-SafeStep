@@ -11,9 +11,9 @@ This app will leverage the best resources we are privileged with by our status a
 
 ## User Story
 
-AS A visually impaired person  
-I WANT to be aware of vehicle traffic  
-SO THAT I can safely cross at traffic intersections
+_As a_ visually impaired person  
+_I want_ to be aware of vehicle traffic  
+_So That_ I can safely cross at traffic intersections
 
 
 ## Challenge Area
