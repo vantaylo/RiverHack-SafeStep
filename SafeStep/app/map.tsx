@@ -4,17 +4,19 @@ import {Text, View, StyleSheet } from "react-native";
 import Geolocation from 'react-native-geolocation-service';
 
 
+const location = () => {
+  Geolocation.getCurrentPosition(
+      (position) => {
+        console.log(position);
+      },
+      (error) => {
+        // See error code charts below.
+        console.log(error.code, error.message);
+      },
+      { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
+  );}
 
-Geolocation.getCurrentPosition(
-    (position) => {
-      console.log(position);
-    },
-    (error) => {
-      // See error code charts below.
-      console.log(error.code, error.message);
-    },
-    { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
-);
+  export default location;
 
 // const MyMap = () => {
 //   const [location, setLocation] = useState(null);
