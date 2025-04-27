@@ -52,19 +52,19 @@ interface intersectionObject {
 }
 
 
-const getIntersection = (data: string, loc: GPS) => {
+export const getIntersection = (data: string, loc: GPS) => {
+  //on error return constructed signalGroup that is always a red light
   try {
     const cleanBlob: intersectionObject = JSON.parse(data);
     let status = cleanBlob.signalGroups.find(
       (group)=> group.signalGroupId === loc.direction
     );
-    return status;
+    return status || {signalGroupId: CompassDirection.East, direction:"East", signalPhase: LightStatus.Red, timeRemaining: 55};
 
   } catch (error) {
     console.error("Invalid JSON string:", error);
+    return {signalGroupId: CompassDirection.East, direction:"East", signalPhase: LightStatus.Red, timeRemaining: 55};
   }
-  
-  return null;
 }
 
 
