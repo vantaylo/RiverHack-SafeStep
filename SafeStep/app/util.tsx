@@ -20,3 +20,24 @@ const getLocation = () => {const location : GPS = {
 } 
 
 console.log(getLocation());
+
+
+enum LightStatus{
+  Green = 1,
+  Yellow,
+  Red
+}
+interface signalGroupObject{
+  signalGroupId: CompassDirection,
+  direction: string,
+  signalPhase: LightStatus,
+  timeRemaining: number,
+}
+interface intersectionObject {
+  timestamp: number;
+  intersectionId: number;
+  intersectionName: string;
+  signalGroups: Array<signalGroupObject>
+}
+
+
