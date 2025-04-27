@@ -1,3 +1,7 @@
+//==============================================
+// Get Location Mocked Code and helper objects
+//==============================================
+
 enum CompassDirection {
   North = 1,
   East,
@@ -19,8 +23,9 @@ const getLocation = () => {const location : GPS = {
   return location;
 } 
 
-console.log(getLocation());
-
+//===========================================
+// Get Intersection Code and helper objects
+//===========================================
 
 enum LightStatus{
   Green = 1,
