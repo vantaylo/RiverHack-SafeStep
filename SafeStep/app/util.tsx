@@ -22,11 +22,18 @@ interface GPS {
   longitude: number;
   direction: CompassDirection;
 }
+function getRandomEnumValue(): CompassDirection {
+  const enumValues = Object.values(CompassDirection).filter(
+    (value) => typeof value === "number"
+  );
+  return enumValues[Math.floor(Math.random() * enumValues.length)] as CompassDirection;
+}
+const randomDirection = getRandomEnumValue();
 
 export const getLocation = () => {const location : GPS = {
     latitude: 30.255886,
     longitude: -97.685076,
-    direction: CompassDirection.North
+    direction: randomDirection
   }
   return location;
 } 
@@ -104,4 +111,4 @@ export const processIntersection = () => {
   return status;
 };
 
-// console.log(processIntersection());
+console.log(processIntersection());
