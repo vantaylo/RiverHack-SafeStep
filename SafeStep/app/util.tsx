@@ -41,3 +41,15 @@ interface intersectionObject {
 }
 
 
+const getIntersection = (data: string, loc: GPS) => {
+  try {
+    const cleanBlob: intersectionObject = JSON.parse(data);
+    console.log(cleanBlob.signalGroups);
+  } catch (error) {
+    console.error("Invalid JSON string:", error);
+  }
+  
+
+  //data.filter((data) => data.length > 6)
+}
+
