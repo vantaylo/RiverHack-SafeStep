@@ -21,7 +21,7 @@ interface GPS {
   direction: CompassDirection;
 }
 
-const getLocation = () => {const location : GPS = {
+export const getLocation = () => {const location : GPS = {
     latitude: 30.255886,
     longitude: -97.685076,
     direction: CompassDirection.North
@@ -38,7 +38,7 @@ enum LightStatus{
   Yellow,
   Red
 }
-interface signalGroupObject{
+export interface signalGroupObject{
   signalGroupId: CompassDirection,
   direction: string,
   signalPhase: LightStatus,
@@ -72,13 +72,13 @@ export const getIntersection = (data: string, loc: GPS) => {
 // Get Status Code and helper objects
 //===========================================
 
-enum Status{
+export enum Status{
   Walk="Walk",
   Warning="Warning",
   Stop="STOP"
 }
 
-const getStatus = (data: signalGroupObject) =>{
+export const getStatus = (data: signalGroupObject) =>{
   let status:Status;
   if(data.signalPhase == LightStatus.Green && data.timeRemaining >= crossingTime){
     status= Status.Walk;
