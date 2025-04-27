@@ -4,7 +4,7 @@ import { getStatus } from './getStatus';
 
 
 //mocked intersection database
-import mockedDB from '../MockData/mock.json'
+import mockedDB from '../app/MockData/mock.json'
 // types
 enum CompassDirection {
   North = 1,
