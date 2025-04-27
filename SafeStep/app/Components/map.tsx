@@ -1,59 +1,59 @@
-import React, { useEffect, useState } from 'react';
-import {Text, View, StyleSheet } from "react-native";
-;import MapView, {Marker} from 'react-native-maps';
-import Geolocation from 'react-native-geolocation-service';
 
+import { useState, useEffect } from 'react';
+import { Platform, Text, View, StyleSheet } from 'react-native';
 
-const location = () => {
-  Geolocation.getCurrentPosition(
-      (position) => {
-        console.log(position);
-      },
-      (error) => {
-        // See error code charts below.
-        console.log(error.code, error.message);
-      },
-      { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
-  );}
+// import * as Device from 'expo-device';
 
-  export default location;
+import * as Location from 'expo-location';
 
-// const MyMap = () => {
-//   const [location, setLocation] = useState(null);
+export default function App() {
+  const [location, setLocation] = useState<Location.LocationObject | null>(null);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
-//   useEffect(() => {
-//     if (hasLocationPermission)
-//     // Request the user's location
-//     Geolocation.getCurrentPosition(
-//       (position) => {
-//         const { latitude, longitude } = position.coords;
-//         setLocation({
-//           latitude,
-//           longitude,
-//           latitudeDelta: 0.01, // Adjust zoom level
-//           longitudeDelta: 0.01,
-//         });
-//       },
-//       (error) => {
-//         console.error('Error getting location: ', error);
-//       },
-//       { enableHighAccuracy: true, timeout: 15000, maximumAge: 10000 }
-//     );
-//   }, []);
+  useEffect(() => {
+    async function getCurrentLocation() {
+      // if (Platform.OS === 'android' && !Device.isDevice) {
+      //   setErrorMsg(
+      //     'Oops, this will not work on Snack in an Android Emulator. Try it on your device!'
+      //   );
+      //   return;
+      // }
+      let { status } = await Location.requestForegroundPermissionsAsync();
+      if (status !== 'granted') {
+        setErrorMsg('Permission to access location was denied');
+        return;
+      }
 
-//   return (
-//      location
-//   );
-// };
+      let location = await Location.getCurrentPositionAsync({});
+      setLocation(location);
+    }
 
-// export default location;
+    getCurrentLocation();
+  }, []);
 
-// const map_styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//   },
-//   map: {
-//     width: '100%',
-//     height: '100%',
-//   },
-// });
+  let text = 'Waiting...';
+  if (errorMsg) {
+    text = errorMsg;
+  } else if (location) {
+    text = JSON.stringify(location);
+  }
+
+  return (
+    <View style={styles.container}>
+      <Text style={styles.paragraph}>{text}</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+  },
+  paragraph: {
+    fontSize: 18,
+    textAlign: 'center',
+  },
+});
