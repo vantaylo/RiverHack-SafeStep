@@ -1,11 +1,10 @@
 import { getLocation } from './getLocation';
-import { signalGroupObject, getIntersection, getIntersectionName } from './Components/getIntersection';
+import { getIntersection, getIntersectionName } from './getIntersection';
 import { getStatus } from './getStatus';
 
 
 //mocked intersection database
-import mockedDB from '../mock/mock.json'
-
+import mockedDB from '../MockData/mock.json'
 // types
 enum CompassDirection {
   North = 1,

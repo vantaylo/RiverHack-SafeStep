@@ -1,4 +1,4 @@
-import { signalGroupObject } from "./Components/getIntersection";
+import { signalGroupObject } from "./getIntersection";
 //===========================================
 // Config
 //===========================================
