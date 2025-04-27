@@ -154,162 +154,161 @@
             }
         ]
     },
-    [
+    {
+      "timestamp": 1588903200,
+      "intersectionId": 960,
+      "intersectionName": "CAMERON RD / RUNDBERG LN",
+      "signalGroups": [
         {
-          "timestamp": 1588903200,
-          "intersectionId": 960,
-          "intersectionName": "CAMERON RD / RUNDBERG LN",
-          "signalGroups": [
-            {
-              "signalGroupId": 1,
-              "direction": "North",
-              "signalPhase": "Green",
-              "timeRemaining": 40
-            },
-            {
-              "signalGroupId": 2,
-              "direction": "South",
-              "signalPhase": "Green",
-              "timeRemaining": 50
-            },
-            {
-              "signalGroupId": 3,
-              "direction": "East",
-              "signalPhase": "Yellow",
-              "timeRemaining": 10
-            },
-            {
-              "signalGroupId": 4,
-              "direction": "West",
-              "signalPhase": "Red",
-              "timeRemaining": 60
-            }
-          ]
+          "signalGroupId": 1,
+          "direction": "North",
+          "signalPhase": "Green",
+          "timeRemaining": 40
         },
         {
-          "timestamp": 1588903200,
-          "intersectionId": 881,
-          "intersectionName": "ST ELMO RD / WOODWARD ST",
-          "signalGroups": [
-            {
-              "signalGroupId": 1,
-              "direction": "North",
-              "signalPhase": "Green",
-              "timeRemaining": 42
-            },
-            {
-              "signalGroupId": 2,
-              "direction": "South",
-              "signalPhase": "Green",
-              "timeRemaining": 48
-            },
-            {
-              "signalGroupId": 3,
-              "direction": "East",
-              "signalPhase": "Yellow",
-              "timeRemaining": 8
-            },
-            {
-              "signalGroupId": 4,
-              "direction": "West",
-              "signalPhase": "Red",
-              "timeRemaining": 55
-            }
-          ]
+          "signalGroupId": 2,
+          "direction": "South",
+          "signalPhase": "Green",
+          "timeRemaining": 50
         },
         {
-          "timestamp": 1588903200,
-          "intersectionId": 71,
-          "intersectionName": "RED RIVER ST / CLYDE LITTLEFIELD DR",
-          "signalGroups": [
-            {
-              "signalGroupId": 1,
-              "direction": "North",
-              "signalPhase": "Green",
-              "timeRemaining": 38
-            },
-            {
-              "signalGroupId": 2,
-              "direction": "South",
-              "signalPhase": "Green",
-              "timeRemaining": 52
-            },
-            {
-              "signalGroupId": 3,
-              "direction": "East",
-              "signalPhase": "Yellow",
-              "timeRemaining": 12
-            },
-            {
-              "signalGroupId": 4,
-              "direction": "West",
-              "signalPhase": "Red",
-              "timeRemaining": 63
-            }
-          ]
+          "signalGroupId": 3,
+          "direction": "East",
+          "signalPhase": "Yellow",
+          "timeRemaining": 10
         },
         {
-          "timestamp": 1588903200,
-          "intersectionId": 702,
-          "intersectionName": "FM 969 RD / DECKER LN",
-          "signalGroups": [
-            {
-              "signalGroupId": 1,
-              "direction": "North",
-              "signalPhase": "Green",
-              "timeRemaining": 45
-            },
-            {
-              "signalGroupId": 2,
-              "direction": "South",
-              "signalPhase": "Green",
-              "timeRemaining": 45
-            },
-            {
-              "signalGroupId": 3,
-              "direction": "East",
-              "signalPhase": "Red",
-              "timeRemaining": 30
-            },
-            {
-              "signalGroupId": 4,
-              "direction": "West",
-              "signalPhase": "Yellow",
-              "timeRemaining": 15
-            }
-          ]
-        },
-        {
-          "timestamp": 1588903200,
-          "intersectionId": 734,
-          "intersectionName": "DESSAU RD / DUNGAN LN",
-          "signalGroups": [
-            {
-              "signalGroupId": 1,
-              "direction": "North",
-              "signalPhase": "Green",
-              "timeRemaining": 40
-            },
-            {
-              "signalGroupId": 2,
-              "direction": "South",
-              "signalPhase": "Green",
-              "timeRemaining": 50
-            },
-            {
-              "signalGroupId": 3,
-              "direction": "East",
-              "signalPhase": "Yellow",
-              "timeRemaining": 7
-            },
-            {
-              "signalGroupId": 4,
-              "direction": "West",
-              "signalPhase": "Red",
-              "timeRemaining": 60
-            }
-          ]
+          "signalGroupId": 4,
+          "direction": "West",
+          "signalPhase": "Red",
+          "timeRemaining": 60
         }
       ]
+    },
+    {
+      "timestamp": 1588903200,
+      "intersectionId": 881,
+      "intersectionName": "ST ELMO RD / WOODWARD ST",
+      "signalGroups": [
+        {
+          "signalGroupId": 1,
+          "direction": "North",
+          "signalPhase": "Green",
+          "timeRemaining": 42
+        },
+        {
+          "signalGroupId": 2,
+          "direction": "South",
+          "signalPhase": "Green",
+          "timeRemaining": 48
+        },
+        {
+          "signalGroupId": 3,
+          "direction": "East",
+          "signalPhase": "Yellow",
+          "timeRemaining": 8
+        },
+        {
+          "signalGroupId": 4,
+          "direction": "West",
+          "signalPhase": "Red",
+          "timeRemaining": 55
+        }
+      ]
+    },
+    {
+      "timestamp": 1588903200,
+      "intersectionId": 71,
+      "intersectionName": "RED RIVER ST / CLYDE LITTLEFIELD DR",
+      "signalGroups": [
+        {
+          "signalGroupId": 1,
+          "direction": "North",
+          "signalPhase": "Green",
+          "timeRemaining": 38
+        },
+        {
+          "signalGroupId": 2,
+          "direction": "South",
+          "signalPhase": "Green",
+          "timeRemaining": 52
+        },
+        {
+          "signalGroupId": 3,
+          "direction": "East",
+          "signalPhase": "Yellow",
+          "timeRemaining": 12
+        },
+        {
+          "signalGroupId": 4,
+          "direction": "West",
+          "signalPhase": "Red",
+          "timeRemaining": 63
+        }
+      ]
+    },
+    {
+      "timestamp": 1588903200,
+      "intersectionId": 702,
+      "intersectionName": "FM 969 RD / DECKER LN",
+      "signalGroups": [
+        {
+          "signalGroupId": 1,
+          "direction": "North",
+          "signalPhase": "Green",
+          "timeRemaining": 45
+        },
+        {
+          "signalGroupId": 2,
+          "direction": "South",
+          "signalPhase": "Green",
+          "timeRemaining": 45
+        },
+        {
+          "signalGroupId": 3,
+          "direction": "East",
+          "signalPhase": "Red",
+          "timeRemaining": 30
+        },
+        {
+          "signalGroupId": 4,
+          "direction": "West",
+          "signalPhase": "Yellow",
+          "timeRemaining": 15
+        }
+      ]
+    },
+    {
+      "timestamp": 1588903200,
+      "intersectionId": 734,
+      "intersectionName": "DESSAU RD / DUNGAN LN",
+      "signalGroups": [
+        {
+          "signalGroupId": 1,
+          "direction": "North",
+          "signalPhase": "Green",
+          "timeRemaining": 40
+        },
+        {
+          "signalGroupId": 2,
+          "direction": "South",
+          "signalPhase": "Green",
+          "timeRemaining": 50
+        },
+        {
+          "signalGroupId": 3,
+          "direction": "East",
+          "signalPhase": "Yellow",
+          "timeRemaining": 7
+        },
+        {
+          "signalGroupId": 4,
+          "direction": "West",
+          "signalPhase": "Red",
+          "timeRemaining": 60
+        }
+      ]
+    }
+      
       
 ]
