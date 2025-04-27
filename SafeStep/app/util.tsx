@@ -61,3 +61,17 @@ const getIntersection = (data: string, loc: GPS) => {
   return null;
 }
 
+
+//===========================================
+// Get Status Code and helper objects
+//===========================================
+
+enum Status{
+  Walk,
+  Warning,
+  Stop
+}
+
+const getStatus = (data: signalGroupObject) =>{
+ return Status.Stop;
+};
