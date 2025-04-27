@@ -89,10 +89,10 @@ export enum Status{
 
 export const getStatus = (data: signalGroupObject) =>{
   let status:Status;
-  if(data.signalPhase == LightStatus.Green && data.timeRemaining >= crossingTime){
+  if(data.signalPhase === LightStatus.Green && data.timeRemaining >= crossingTime){
     status= Status.Walk;
   }
-  else if (data.signalPhase == LightStatus.Red) {
+  else if (data.signalPhase === LightStatus.Red) {
     status= Status.Stop;
   } 
   else {
@@ -108,6 +108,7 @@ export const processIntersection = () => {
   let pickRandomIntersection = mockedDB[Math.floor(Math.random() * mockedDB.length)];
   const signal = getIntersection(JSON.stringify(pickRandomIntersection), loc);
   const status = getStatus(signal);
+  console.log(status + JSON.stringify(signal) + JSON.stringify(loc));
   return status;
 };
 
