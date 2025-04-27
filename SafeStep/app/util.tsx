@@ -110,8 +110,6 @@ export const processIntersection = () => {
   const name = getIntersectionName(JSON.stringify(pickRandomIntersection));
   const signal = getIntersection(JSON.stringify(pickRandomIntersection), loc);
   const status = getStatus(signal);
-  // console.log(status + JSON.stringify(signal) + JSON.stringify(loc));
+  
   return {status, name};
 };
-
-console.log(processIntersection());
