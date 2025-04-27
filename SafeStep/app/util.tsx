@@ -107,9 +107,8 @@ export const processIntersection = () => {
   const loc = getLocation();
   //mocked file
   let pickRandomIntersection = mockedDB[Math.floor(Math.random() * mockedDB.length)];
-  const name = getIntersectionName(JSON.stringify(pickRandomIntersection));
+  let intersectionName = getIntersectionName(JSON.stringify(pickRandomIntersection));
   const signal = getIntersection(JSON.stringify(pickRandomIntersection), loc);
   const status = getStatus(signal);
-  
-  return {status, name};
+  return {status, intersectionName};
 };
