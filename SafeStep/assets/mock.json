@@ -18,14 +18,14 @@
         {
             "signalGroupId": 3,
             "direction": "East",
-            "signalPhase": "Yellow",
-            "timeRemaining": 5
+            "signalPhase": "Red",
+            "timeRemaining": 30
         },
         {
             "signalGroupId": 4,
             "direction": "West",
             "signalPhase": "Red",
-            "timeRemaining": 0
+            "timeRemaining": 30
         }
     ]
 }
