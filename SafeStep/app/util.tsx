@@ -60,7 +60,7 @@ export const getIntersection = (data: string, loc: GPS) => {
       (group)=> group.signalGroupId === loc.direction
     );
     return status || {signalGroupId: CompassDirection.East, direction:"East", signalPhase: LightStatus.Red, timeRemaining: 55};
-
+    
   } catch (error) {
     console.error("Invalid JSON string:", error);
     return {signalGroupId: CompassDirection.East, direction:"East", signalPhase: LightStatus.Red, timeRemaining: 55};
@@ -93,5 +93,13 @@ export const getStatus = (data: signalGroupObject) =>{
 };
 
 
-// let bleh:signalGroupObject = {signalGroupId: CompassDirection.East, direction:"East", signalPhase: LightStatus.Green, timeRemaining: 55};
-// console.log( getStatus(bleh));
+export const processIntersection = () =>{
+  const loc = getLocation();
+  //mocked file
+  // import mockedfile from 
+  let pickRandomIntersection: string = "";
+  // pickRandomIntersection = mock[Math.floor(Math.random() * mock.length)];
+  const signal = getIntersection(pickRandomIntersection, loc);
+  const status = getStatus(signal);
+  return status;
+};
