@@ -73,11 +73,25 @@ const getIntersection = (data: string, loc: GPS) => {
 //===========================================
 
 enum Status{
-  Walk,
-  Warning,
-  Stop
+  Walk="Walk",
+  Warning="Warning",
+  Stop="STOP"
 }
 
 const getStatus = (data: signalGroupObject) =>{
- return Status.Stop;
+  let status:Status;
+  if(data.signalPhase == LightStatus.Green && data.timeRemaining >= crossingTime){
+    status= Status.Walk;
+  }
+  else if (data.signalPhase == LightStatus.Red) {
+    status= Status.Stop;
+  } 
+  else {
+    status= Status.Warning;    
+  }
+ return status;
 };
+
+
+// let bleh:signalGroupObject = {signalGroupId: CompassDirection.East, direction:"East", signalPhase: LightStatus.Green, timeRemaining: 55};
+// console.log( getStatus(bleh));
