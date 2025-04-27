@@ -43,9 +43,9 @@ export const getLocation = () => {const location : GPS = {
 //===========================================
 
 enum LightStatus{
-  Green = 1,
-  Yellow,
-  Red
+  Green = "Green",
+  Yellow= "Yellow",
+  Red   = "Red"
 }
 export interface signalGroupObject{
   signalGroupId: CompassDirection,
@@ -101,15 +101,15 @@ export const getStatus = (data: signalGroupObject) =>{
  return status;
 };
 
-
+//Easy all-in function for hook
 export const processIntersection = () => {
   const loc = getLocation();
   //mocked file
   let pickRandomIntersection = mockedDB[Math.floor(Math.random() * mockedDB.length)];
   const signal = getIntersection(JSON.stringify(pickRandomIntersection), loc);
   const status = getStatus(signal);
-  console.log(status + JSON.stringify(signal) + JSON.stringify(loc));
+  // console.log(status + JSON.stringify(signal) + JSON.stringify(loc));
   return status;
 };
 
-console.log(processIntersection());
+// console.log(processIntersection());
