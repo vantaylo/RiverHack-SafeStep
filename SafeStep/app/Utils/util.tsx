@@ -5,7 +5,7 @@
 const crossingTime:number = 30;
 
 //mocked intersection database
-import mockedDB from '../mock/mock.json'
+import mockedDB from '../MockData/mock.json'
 //==============================================
 // Get Location Mocked Code and helper objects
 //==============================================
