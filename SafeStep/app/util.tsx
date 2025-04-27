@@ -55,8 +55,8 @@ interface intersectionObject {
 export const getIntersection = (data: string, loc: GPS) => {
   //on error return constructed signalGroup that is always a red light
   try {
-    const cleanBlob: intersectionObject = JSON.parse(data);
-    let status = cleanBlob.signalGroups.find(
+    const instance: intersectionObject = JSON.parse(data);
+    let status = instance.signalGroups.find(
       (group)=> group.signalGroupId === loc.direction
     );
     return status || {signalGroupId: CompassDirection.East, direction:"East", signalPhase: LightStatus.Red, timeRemaining: 55};
