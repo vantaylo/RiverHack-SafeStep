@@ -1,16 +1,8 @@
 import { Text, View, Image } from "react-native";
 
-export default function Index() {
+export default function SafeStep() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-        position: "relative",
-        backgroundColor: "#3733ff",
-      }}
-    >
+    <View>
       <Text
         style={{
           fontSize: 30, // Larger text size
@@ -26,7 +18,7 @@ export default function Index() {
       </Text>
       <Text
         style={{
-          fontSize: 100, // Larger text size
+          fontSize: 50, // Larger text size
           fontFamily: "Helvetica", // System font
           fontWeight: "bold", // Bold text
           color: "white", // Purple text
