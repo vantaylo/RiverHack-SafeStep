@@ -60,6 +60,7 @@ interface intersectionObject {
   signalGroups: Array<signalGroupObject>
 }
 
+export const getIntersectionName = (data: string) => {return JSON.parse(data).intersectionName;};
 
 export const getIntersection = (data: string, loc: GPS) => {
   //on error return constructed signalGroup that is always a red light
@@ -106,10 +107,11 @@ export const processIntersection = () => {
   const loc = getLocation();
   //mocked file
   let pickRandomIntersection = mockedDB[Math.floor(Math.random() * mockedDB.length)];
+  const name = getIntersectionName(JSON.stringify(pickRandomIntersection));
   const signal = getIntersection(JSON.stringify(pickRandomIntersection), loc);
   const status = getStatus(signal);
   // console.log(status + JSON.stringify(signal) + JSON.stringify(loc));
-  return status;
+  return {status, name};
 };
 
-// console.log(processIntersection());
+console.log(processIntersection());
