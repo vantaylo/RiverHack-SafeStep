@@ -4,6 +4,8 @@
 //Minimum time for crossing
 const crossingTime:number = 30;
 
+//mocked intersection database
+import mockedDB from '../mock/mock.json'
 //==============================================
 // Get Location Mocked Code and helper objects
 //==============================================
@@ -93,13 +95,14 @@ export const getStatus = (data: signalGroupObject) =>{
 };
 
 
-export const processIntersection = () =>{
+export const processIntersection = () => {
   const loc = getLocation();
   //mocked file
-  // import mockedfile from 
-  let pickRandomIntersection: string = "";
-  // pickRandomIntersection = mock[Math.floor(Math.random() * mock.length)];
+  let pickRandomIntersection: string = JSON.stringify(mockedDB);
+  pickRandomIntersection = pickRandomIntersection[Math.floor(Math.random() * pickRandomIntersection.length)];
   const signal = getIntersection(pickRandomIntersection, loc);
   const status = getStatus(signal);
   return status;
 };
+
+console.log(processIntersection());
