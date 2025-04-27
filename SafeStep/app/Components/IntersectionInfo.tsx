@@ -1,6 +1,10 @@
-import { Text, View, Image } from "react-native";
+import { Text, View } from "react-native";
+import { useState } from "react";
 
-export default function SafeStep() {
+export default function IntersectionInfo() {
+  const [intersection, setIntersection] = useState('Street Name 1 / Street Name 2');
+  const [status, setStatus] = useState('STOP');
+
   return (
     <View>
       <Text
@@ -8,26 +12,26 @@ export default function SafeStep() {
           fontSize: 30, // Larger text size
           fontFamily: "Helvetica", // System font
           fontWeight: "bold", // Bold text
-          color: "white", // Purple text
+          color: "black", // Purple text
           textAlign: "center", // Center the text horizontally
           textTransform: "uppercase", // Uppercase text
           letterSpacing: 4, // Spacing between letters
         }}
       >
-        CURRENT INTERSECTION
+        {intersection}
       </Text>
       <Text
         style={{
-          fontSize: 50, // Larger text size
+          fontSize: 75, // Larger text size
           fontFamily: "Helvetica", // System font
           fontWeight: "bold", // Bold text
-          color: "white", // Purple text
+          color: "red", // Purple text
           textAlign: "center", // Center the text horizontally
           textTransform: "uppercase", // Uppercase text
           letterSpacing: 4, // Spacing between letters
         }}
       >
-        CROSSING STATUS
+        {status}
       </Text>
     </View>
   );

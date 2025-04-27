@@ -1,6 +1,7 @@
 
-import { View, Text } from 'react-native';
-import SafeStep from './Components/SafeStep';
+import { View } from 'react-native';
+import CrossButton from './Components/CrossButton';
+import IntersectionInfo from './Components/IntersectionInfo';
 
 export default function HomeScreen() {
   return (
@@ -10,10 +11,13 @@ export default function HomeScreen() {
       justifyContent: "center",
       alignItems: "center",
       position: "relative",
-      backgroundColor: "#3733ff",
+      backgroundColor: "#f7B500",
     }}
     >
-      <SafeStep/>
+      <IntersectionInfo/>
+      <CrossButton 
+        onPress={() => console.log('CrossButton pressed')}
+      />
     </View>
   )
 }
