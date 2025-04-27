@@ -31,9 +31,8 @@ _So That_ I can safely cross at traffic intersections
 
 ## Technologies
 
-- React  
-- Geolocation API  
-- COA Traffic Control API (C-V2X)
+- React Native
+- Typescript
 
 
 ## Minimum Viable Product (MVP)
