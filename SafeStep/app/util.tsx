@@ -98,11 +98,10 @@ export const getStatus = (data: signalGroupObject) =>{
 export const processIntersection = () => {
   const loc = getLocation();
   //mocked file
-  let pickRandomIntersection: string = JSON.stringify(mockedDB);
-  pickRandomIntersection = pickRandomIntersection[Math.floor(Math.random() * pickRandomIntersection.length)];
-  const signal = getIntersection(pickRandomIntersection, loc);
+  let pickRandomIntersection = mockedDB[Math.floor(Math.random() * mockedDB.length)];
+  const signal = getIntersection(JSON.stringify(pickRandomIntersection), loc);
   const status = getStatus(signal);
   return status;
 };
 
-console.log(processIntersection());
+// console.log(processIntersection());
